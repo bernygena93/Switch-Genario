@@ -19,7 +19,6 @@ export default function NumberCard({title, handleSelect}) {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
-          value={number}
           keyboardType="numeric"
           onChangeText={text => handleChange(text)}
         />
