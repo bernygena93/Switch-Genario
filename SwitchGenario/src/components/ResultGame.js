@@ -10,10 +10,10 @@ export default function ResultGame({result}) {
       {result === 'win' ? (
         <View style={styles.results}>
           <Text style={styles.text}>Se cumplieron las 5 rondas</Text>
-          <Image source={loseImage} style={styles.img} />
+          <Image source={winImage} style={styles.img} />
         </View>
       ) : (
-        <View>
+        <View style={styles.results}>
           <Text style={styles.text}>Adivinaron tu numero</Text>
           <Image source={loseImage} style={styles.img} />
         </View>

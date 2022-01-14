@@ -30,8 +30,8 @@ export default function GameScreen({optionUser, setOptionUser}) {
     setMax(number);
     setNumber(generateRandomBetween(min, number, optionUser));
     setRounds(rounds => rounds + 1);
-    console.warn(rounds);
   };
+
   const handleRateMax = () => {
     setMin(number);
     setNumber(generateRandomBetween(number, max, optionUser));
